@@ -1,0 +1,51 @@
+Git Lab Tutorials date: October 23rd 2025
+Setup Github account: years ago
+
+1. Paste the console output you saved at the end of step 3.C (2 points)
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean 
+
+2. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+9
+Command: git rev-list --count --all
+
+3. When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+Author: danielanunezr <danielanunezr18@gmail.com>
+Date:   Thu Oct 23 13:49:26 2025 -0500
+
+    Added name and FSUID to README
+    
+    Updated repository owner information
+    
+    Added my name and FSUID to the README.md file as required for assignment instructions.
+command: git log -1 README.md
+
+4. Mention two reasons why branches are used in a Git repository (4 points)
+Branches let you work on new features or fixes without changing the main code.
+They make it easier to test and merge updates later.
+
+5. What is the difference between git log and git status? (4 points)
+git log shows past commits and messages.
+git status shows current changes in your files.
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the of the committed files? (4 points)
+git log -- Vehicle.h
+
+7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --grep="file" -i
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+(I) Inheritance: lets one class use and extend another class’s code.
+(II) Polymorphism: lets different classes use the same method name but act differently.
+(III) Encapsulation: hides a class’s data and only allows controlled access through methods.
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+Integration Manager: one manager merges all developers work into the main repo.
+Dictator and Lieutenants: lieutenants merge for their teams and only the dictator updates the main repo.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+It splits big teams into groups with lieutenants managing merges and reduces conflicts and keeps the main repo stable.
+
+
